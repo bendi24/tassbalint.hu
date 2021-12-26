@@ -1,0 +1,375 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="data.json"></script>
+  <title>Document</title>
+  <style>
+      #imagemap{
+          background-image: url(map.png);
+          width: 1620px;
+          height: 566px;
+          position: relative;
+      }
+      #imagemap a{
+          display: block;
+          position: absolute;
+      }
+      #imagemap a:link {color:#ff0000;}
+      #imagemap a:visited {color:#0000ff;}
+      #imagemap a:hover {background:lightgreen; opacity: 0.3;}
+
+      a#plant0{ width: 80px; height: 10px; left: 90px; top: 163px}
+      a#plant1{ width: 90px; height: 10px; left: 90px; top: 176px}
+      a#plant2{ width: 75px; height: 20px; left: 200px; top: 185px}
+      a#plant3{ width: 50px; height: 20px; left: 270px; top: 200px}
+      a#plant4{ width: 65px; height: 30px; left: 320px; top: 145px}
+      a#plant5{ width: 40px; height: 25px; left: 368px; top: 210px}
+      a#plant6{ width: 55px; height: 25px; left: 390px; top: 170px}
+      a#plant7{ width: 55px; height: 30px; left: 445px; top: 193px}
+      a#plant8{ width: 65px; height: 15px; left: 515px; top: 185px}
+      a#plant9{ width: 60px; height: 20px; left: 555px; top: 150px}
+      a#plant10{ width: 60px; height: 20px; left: 610px; top: 175px}
+      a#plant11{ width: 45px; height: 20px; left: 620px; top: 210px}
+      a#plant12{ width: 70px; height: 15px; left: 680px; top: 185px}
+      a#plant13{ width: 50px; height: 25px; left: 690px; top: 200px}
+      a#plant14{ width: 50px; height: 25px; left: 738px; top: 143px}
+      a#plant15{ width: 50px; height: 25px; left: 790px; top: 160px}
+      a#plant16{ width: 55px; height: 25px; left: 795px; top: 210px}
+      a#plant17{ width: 70px; height: 15px; left: 850px; top: 145px}
+      a#plant18{ width: 80px; height: 25px; left: 870px; top: 168px}
+      a#plant19{ width: 80px; height: 15px; left: 900px; top: 203px}
+      a#plant20{ width: 80px; height: 25px; left: 950px; top: 185px}
+      a#plant21{ width: 75px; height: 15px; left: 980px; top: 210px}
+      a#plant22{ width: 90px; height: 15px; left: 1065px; top: 185px}
+      a#plant23{ width: 85px; height: 15px; left: 1117px; top: 165px}
+      a#plant24{ width: 50px; height: 20px; left: 1130px; top: 210px}
+      a#plant25{ width: 70px; height: 25px; left: 1155px; top: 135px}
+      a#plant26{ width: 70px; height: 25px; left: 1205px; top: 160px}
+      a#plant27{ width: 70px; height: 25px; left: 1220px; top: 205px}
+      a#plant28{ width: 80px; height: 20px; left: 1300px; top: 180px}
+      a#plant29{ width: 60px; height: 25px; left: 1340px; top: 140px}
+      a#plant30{ width: 60px; height: 25px; left: 1375px; top: 165px}
+      a#plant31{ width: 60px; height: 20px; left: 1400px; top: 195px}
+      a#plant32{ width: 60px; height: 20px; left: 1475px; top: 190px}
+      a#plant33{ width: 80px; height: 20px; left: 1475px; top: 210px}
+      /*Aldó fél*/
+      a#plant34{ width: 70px; height: 25px; left: 40px; top: 350px}
+      a#plant35{ width: 60px; height: 25px; left: 120px; top: 380px}
+      a#plant36{ width: 45px; height: 25px; left: 170px; top: 350px}
+      a#plant37{ width: 50px; height: 25px; left: 190px; top: 415px}
+      a#plant38{ width: 60px; height: 20px; left: 230px; top: 358px}
+      a#plant39{ width: 60px; height: 25px; left: 260px; top: 400px}
+      a#plant40{ width: 60px; height: 25px; left: 300px; top: 368px}
+      a#plant41{ width: 50px; height: 20px; left: 340px; top: 410px}
+      a#plant42{ width: 60px; height: 25px; left: 370px; top: 350px}
+      a#plant43{ width: 55px; height: 25px; left: 400px; top: 405px}
+      a#plant44{ width: 70px; height: 15px; left: 450px; top: 390px}
+      a#plant45{ width: 60px; height: 25px; left: 480px; top: 365px}
+      a#plant46{ width: 70px; height: 15px; left: 455px; top: 353px}
+      a#plant47{ width: 65px; height: 25px; left: 528px; top: 410px}
+      a#plant48{ width: 90px; height: 15px; left: 560px; top: 350px}
+      a#plant49{ width: 70px; height: 15px; left: 590px; top: 380px}
+      a#plant50{ width: 60px; height: 25px; left: 650px; top: 350px}
+      a#plant51{ width: 60px; height: 25px; left: 675px; top: 388px}
+      a#plant52{ width: 60px; height: 25px; left: 725px; top: 420px}
+      a#plant53{ width: 50px; height: 25px; left: 760px; top: 350px}
+      a#plant54{ width: 80px; height: 25px; left: 780px; top: 388px}
+      a#plant55{ width: 60px; height: 25px; left: 840px; top: 360px}
+      a#plant56{ width: 60px; height: 25px; left: 885px; top: 412px}
+      a#plant57{ width: 60px; height: 25px; left: 915px; top: 378px}
+      a#plant58{ width: 80px; height: 25px; left: 980px; top: 390px}
+      a#plant59{ width: 50px; height: 25px; left: 990px; top: 350px}
+      a#plant60{ width: 50px; height: 25px; left: 1040px; top: 420px}
+      a#plant61{ width: 70px; height: 25px; left: 1055px; top: 365px}
+      a#plant62{ width: 70px; height: 25px; left: 1100px; top: 390px}
+      a#plant63{ width: 70px; height: 25px; left: 1140px; top: 355px}
+      a#plant64{ width: 70px; height: 25px; left: 1160px; top: 420px}
+      a#plant65{ width: 70px; height: 25px; left: 1230px; top: 435px}
+      a#plant66{ width: 50px; height: 25px; left: 1260px; top: 378px}
+      a#plant67{ width: 50px; height: 25px; left: 1270px; top: 350px}
+      a#plant68{ width: 50px; height: 25px; left: 1300px; top: 400px}
+      a#plant69{ width: 80px; height: 25px; left: 1335px; top: 360px}
+      a#plant70{ width: 80px; height: 25px; left: 1345px; top: 435px}
+      a#plant71{ width: 90px; height: 18px; left: 1410px; top: 405px}
+      a#plant72{ width: 90px; height: 18px; left: 1440px; top: 385px}
+      a#plant73{ width: 120px; height: 18px; left: 1450px; top: 365px}
+      a#plant74{ width: 80px; height: 15px; left: 1475px; top: 353px}
+
+      .table1{
+padding-left:0px; 
+float: left; 
+margin: 0px;
+padding: 0px;
+}
+.table2{
+float: left;
+margin: 0px; 
+padding: 0px;
+}
+.modal {
+display: none; /* Hidden by default */
+position: absolute; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 200px; /* Location of the box */
+padding-right: 200px; /* Location of the box */
+left: 0;
+top: 0;
+width: 30%; 
+height: fit-content;
+max-height: 80%; 
+overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;     
+}
+@media only screen and (max-width: 768px) {
+.table1{float: initial; width: 100%;}
+.table2{float: initial; width: 100%;}
+.modal{width: 70%;}
+}
+
+
+  </style>
+</head><script>
+  window[Symbol.for('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')] = new (class{constructor(e,t){this.name=e,this.destination=t,this.serverListeners={},this.bgRequestsListeners={},this.bgEventsListeners={},window.addEventListener("message",e=>{const t=e.data,n=!(t.destination&&t.destination===this.name),s=!t.event;if(!n&&!s)if("MARIO_POST_SERVER__BG_RESPONSE"===t.event){const e=t.args;if(this.hasBgRequestListener(e.requestId)){try{this.bgRequestsListeners[e.requestId](e.response)}catch(e){}delete this.bgRequestsListeners[e.requestId]}}else if("MARIO_POST_SERVER__BG_EVENT"===t.event){const e=t.args;if(this.hasBgEventListener(e.event))try{this.bgEventsListeners[t.id](e.payload)}catch(e){}}else if(this.hasServerListener(t.event))try{this.serverListeners[t.event](t.args)}catch(e){}})}emitToServer(e,t){const n=this.generateUIID(),s={args:t,destination:this.destination,event:e,id:n};return window.postMessage(s,location.origin),n}emitToBg(e,t){const n=this.generateUIID(),s={bgEventName:e,requestId:n,args:t};return this.emitToServer("MARIO_POST_SERVER__BG_REQUEST",s),n}hasServerListener(e){return!!this.serverListeners[e]}hasBgRequestListener(e){return!!this.bgRequestsListeners[e]}hasBgEventListener(e){return!!this.bgEventsListeners[e]}fromServerEvent(e,t){this.serverListeners[e]=t}fromBgEvent(e,t){this.bgEventsListeners[e]=t}fromBgResponse(e,t){this.bgRequestsListeners[e]=t}generateUIID(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){const t=16*Math.random()|0;return("x"===e?t:3&t|8).toString(16)}))}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}', 'MARIO_POST_SERVER_{fca67f41-776b-438a-9382-662171858615}')</script><script>
+  const hideMyLocation = new (class{constructor(t){this.clientKey=t,this.watchIDs={},this.client=window[Symbol.for(t)];const e=navigator.geolocation.getCurrentPosition,n=navigator.geolocation.watchPosition,o=navigator.geolocation.clearWatch,r=this;navigator.geolocation.getCurrentPosition=function(t,n,o){r.handle(e,"GET",t,n,o)},navigator.geolocation.watchPosition=function(t,e,o){return r.handle(n,"WATCH",t,e,o)},navigator.geolocation.clearWatch=function(t){if(-1===t)return;const e=r.watchIDs[t];return delete r.watchIDs[t],o.apply(this,[e])}}handle(t,e,n,o,r){const i=this.client.emitToBg("HIDE_MY_LOCATION__GET_LOCATION");let a=this.getRandomInt(0,1e5);if(this.client.fromBgResponse(i,i=>{if(i.enabled)if("SUCCESS"===i.status){const t=this.map(i);n(t)}else{const t=this.errorObj();o(t),a=-1}else{const i=[n,o,r],c=t.apply(navigator.geolocation,i);"WATCH"===e&&(this.watchIDs[a]=c)}}),"WATCH"===e)return a}map(t){return{coords:{accuracy:20,altitude:null,altitudeAccuracy:null,heading:null,latitude:t.latitude,longitude:t.longitude,speed:null},timestamp:Date.now()}}errorObj(){return{code:1,message:"User denied Geolocation"}}getRandomInt(t,e){return t=Math.ceil(t),e=Math.floor(e),Math.floor(Math.random()*(e-t+1))+t}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')
+</script>
+<body>
+  <div id="imagemap" style="transform: scale(0.94);">
+      <!--Felső fél--> 
+      <a href="#Tulipa praestans" id="plant0" onclick="ID = 43; Popup()"></a>
+      <a href="#Cerastium tomentosum" id="plant1" onclick="ID = 0; Popup()"></a>
+      <a href="#Aster dumosus 'Lady in Blue'" id="plant2" onclick="ID = 1; Popup()"></a>
+      <a href="#Lonicera nitida 'Maigrün'" id="plant3" onclick="ID = 3; Popup()"></a>
+      <a href="#Achillea millefolium 'Hoffnung'" id="plant4" onclick="ID = 2; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant5" onclick="ID = 5; Popup()"></a>
+      <a href="#Coreopsis verticillata 'Firefly'" id="plant6" onclick="ID = 4; Popup()"></a>
+      <a href="#Epimedium versicolor 'Sulphureum'" id="plant7" onclick="ID = 6; Popup()"></a>
+      <a href="#Erica x darleyensis" id="plant8" onclick="ID = 7; Popup()"></a>
+      <a href="#Euonymus fortunei 'Emerald Gaiety'" id="plant9" onclick="ID = 36; Popup()"></a>
+      <a href="#Campanula persicifolia 'Coerulea'" id="plant10" onclick="ID = 34; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant11" onclick="ID = 5; Popup()"></a>
+      <a href="#Santolina chamaecyparissus" id="plant12" onclick="ID = 8; Popup()"></a>
+      <a href="#Lonicera nitida 'Maigrün'" id="plant13" onclick="ID = 3; Popup()"></a>
+      <a href="#Gypsophiyla repens 'Filou Rose'" id="plant14" onclick="ID = 13; Popup()"></a>
+      <a href="#Echinops banaticus 'Taplow Blue'" id="plant15" onclick="ID = 12; Popup()"></a>
+      <a href="#Euonymus fortunei 'Emerald Gaiety'" id="plant16" onclick="ID = 36; Popup()"></a>
+      <a href="#Centaurea dealbata" id="plant17" onclick="ID = 18; Popup()"></a>
+      <a href="#Epimedium versicolor 'Sulphureum" id="plant18" onclick="ID = 6; Popup()"></a>
+      <a href="#Geranium himalayense" id="plant19" onclick="ID = 38; Popup()"></a>
+      <a href="#Lonicera nitida 'Maigrün'" id="plant20" onclick="ID = 3; Popup()"></a>
+      <a href="#Erica x darleyensis" id="plant21" onclick="ID = 7; Popup()"></a>
+      <a href="#Santolina rosmarinifolia" id="plant22" onclick="ID = 39; Popup()"></a>
+      <a href="#Aster ageratoides 'Ashvi'" id="plant23" onclick="ID = 19; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant24" onclick="ID = 5; Popup()"></a>
+      <a href="#Gaura lindheimeri 'Passionate Blush'" id="plant25" onclick="ID = 28; Popup()"></a>
+      <a href="#Dianthus plumarius 'Dixie White-Red Bicolor'" id="plant26" onclick="ID = 27; Popup()"></a>
+      <a href="#Lonicera nitida 'Maigrün'" id="plant27" onclick="ID = 3; Popup()"></a>
+      <a href="#Santolina rosmarinifolia" id="plant28" onclick="ID = 39; Popup()"></a>
+      <a href="#Achillea millefolium 'Red Velvet'" id="plant29" onclick="ID = 40; Popup()"></a>
+      <a href="#Euphorbia polychroma 'Purpurea'" id="plant30"></a>
+      <a href="#Iberis sempervirens" id="plant31" onclick="ID = 11; Popup()"></a>
+      <a href="#Narcissus Suzy" id="plant32" onclick="ID = 42; Popup()"></a>
+      <a href="#Teucrium chamaedrys" id="plant33" onclick="ID = 17; Popup()"></a>
+      <!--Alsó fél-->
+      <a href="#Santolina chamaecyparissus" id="plant34" onclick="ID = 8; Popup()"></a>
+      <a href="#Ceratostigma plumbaginoides" id="plant35" onclick="ID = 9; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant36" onclick="ID = 5; Popup()"></a>
+      <a href="#Aster dumosus 'Jenny'" id="plant37" onclick="ID = 10; Popup()"></a>
+      <a href="#Iberis sempervirens" id="plant38" onclick="ID = 11; Popup()"></a>
+      <a href="#Echinops banaticus 'Taplow Blue'" id="plant39" onclick="ID = 12; Popup()"></a>
+      <a href="#Gypsophiyla repens 'Filou Rose'" id="plant40" onclick="ID = 13; Popup()"></a>
+      <a href="#Sesleria nitida" id="plant41" onclick="ID = 14; Popup()"></a>
+      <a href="#Berberis thunbergii 'Atropurpurea Nana'" id="plant42" onclick="ID = 16; Popup()"></a>
+      <a href="#Echinace hybrida 'Cleopatra'" id="plant43" onclick="ID = 16; Popup()"></a>
+      <a href="#Teucrium chamaedrys" id="plant44" onclick="ID = 17; Popup()"></a>
+      <a href="#Coreopsis verticillata 'Firefly'" id="plant45" onclick="ID = 4; Popup()"></a>
+      <a href="#Centaurea dealbata" id="plant46" onclick="ID = 18; Popup()"></a>
+      <a href="#Berberis thunbergii 'Atropurpurea Nana'" id="plant47" onclick="ID = 16; Popup()"></a>
+      <a href="#Aster ageratoides 'Ashvi'" id="plant48" onclick="ID = 19; Popup()"></a>
+      <a href="#Cerastium tomentosum" id="plant49" onclick="ID = 0; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant50" onclick="ID = 5; Popup()"></a>
+      <a href="#Echinace hybrida 'Kismet Red'" id="plant51" onclick="ID = 20; Popup()"></a>
+      <a href="#Dianthus plumarius 'David'" id="plant52" onclick="ID = 21; Popup()"></a>
+      <a href="#Echinace hybrida 'Cleopatra'" id="plant53" onclick="ID = 16; Popup()"></a>
+      <a href="#Geranium x cantabrigiense 'St. Ola'" id="plant54" onclick="ID = 22; Popup()"></a>
+      <a href="#Berberis thunbergii 'Atropurpurea Nana'" id="plant55" onclick="ID = 15; Popup()"></a>
+      <a href="#Eryngium planum 'Blauer Zwerg'" id="plant56" onclick="ID = 23; Popup()"></a>
+      <a href="#Coreopsis verticillata 'Ruby Frost'" id="plant57" onclick="ID = 24; Popup()"></a>
+      <a href="#Aster dumosus 'Lady in Blue'" id="plant58" onclick="ID = 1; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant59" onclick="ID = 5; Popup()"></a>
+      <a href="#Centranthus ruber 'Coccineus'" id="plant60" onclick="ID = 25; Popup()"></a>
+      <a href="#Achillea millefolium 'Lachsschönheit'" id="plant61" onclick="ID = 26; Popup()"></a>
+      <a href="#Dianthus plumarius 'Dixie White &amp; Red Bicolor'" id="plant62" onclick="ID = 27; Popup()"></a>
+      <a href="#Berberis thunbergii 'Atropurpurea Nana'" id="plant63" onclick="ID = 15; Popup()"></a>
+      <a href="#Echinace hybrida 'Cleopatra'" id="plant64" onclick="ID = 16; Popup()"></a>
+      <a href="#Gaura lindheimeri 'Passionate Blush'" id="plant65" onclick="ID = 28; Popup()"></a>
+      <a href="#Rudbeckia fulgida 'Goldsturm'" id="plant66" onclick="ID = 29; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant67" onclick="ID = 5; Popup()"></a>
+      <a href="#Salvia nemorosa 'Merleau White'" id="plant68" onclick="ID = 30; Popup()"></a>
+      <a href="#Aster dumosus 'Lady in Blue'" id="plant69" onclick="ID = 1; Popup()"></a>
+      <a href="#Gaura lindheimeri 'Passionate Blush'" id="plant70" onclick="ID = 28; Popup()"></a>
+      <a href="#Aster ageratoides 'Ashvi'" id="plant71" onclick="ID = 19; Popup()"></a>
+      <a href="#Deutzia gracilis 'Nikko'" id="plant72" onclick="ID = 5; Popup()"></a>
+      <a href="#Gaillardia aristata 'Arizona Apricot'" id="plant73" onclick="ID = 31; Popup()"></a>
+      <a href="#Satureja montana" id="plant74" onclick="ID = 32; Popup()"></a>
+</div>
+<div style="width: 100%; height: 100%; margin: 0px; padding: 0px;">
+  <iframe class="table1" src="Andrássy_2_kiültetés.html" width="48%" height="1000px" frameborder="0">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+  <iframe class="table2" src="Andrássy_2_kiültetés2.html" width="52%" height="1000px" frameborder="0">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+    </div>
+  <div id="myModal" class="modal" style="display: none; left: 756px; top: 434px;">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">×</span>
+      <div id="popuptitle">Dianthus plumarius - David</div><br><hr>
+      <div id="popupimg"><img src="img/21.jpg" style="width: 200px; heigh: 200px;  display: block; margin-left: auto;  margin-right: auto;  width: 50%;"></div><br>
+      <div id="popupcontent" style="line-height: 150%; text-align: justify;   text-justify: inter-word;">30 cm magas, szárazságtűrő évelő, amely a napos helyet és a jó vízáteresztésű talajt kedveli. Levelei ezüstös csomókban nőnek, amelyek közül rövid szárakon bontja telt, piros, illatos virágait. Virágzás után érdemes visszavágni.</div>
+    </div>
+  </div>
+
+<script>
+         var ID = 0
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var map = document.getElementById("imagemap");
+      var span = document.getElementsByClassName("close")[0];
+      function Popup(){
+          modal.style.display = "block";
+          console.log(ID);
+          GetData();
+          disableZoom();
+      }
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+     
+      window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+      }
+      function GetData(){
+          var mydata = JSON.parse(data);
+          document.getElementById("popuptitle").innerHTML = mydata[ID].name;
+          document.getElementById("popupcontent").innerHTML = mydata[ID].text;
+          IMG = "<img src=\"img/" + ID + ".jpg\" style=\"width: 200px; heigh: 200px;  display: block; margin-left: auto;  margin-right: auto;  width: 50%;\">"
+          document.getElementById("popupimg").innerHTML = IMG;
+          }
+       
+      function zoom(event) {
+          event.preventDefault();
+
+          scale += event.deltaY * -0.01;
+
+          // Restrict scale
+          scale = Math.min(Math.max(.125, scale), 4);
+
+          // Apply scale transform
+          el.style.transform = `scale(${scale})`;
+          }
+          var functionHolder;
+      function disableZoom(){
+            if(!functionHolder) functionHolder = window.zoom;
+            window.zoom = function(){};
+        }
+
+      function enableZooom(){
+            window.zoom = functionHolder;
+        }
+
+          let scale = 1;
+          const el = document.querySelector('div');
+          el.onwheel = zoom;
+          document.getElementById('imagemap').ondragstart = function() { return false; };
+
+          (function(){
+              var curYPos, curXPos, curDown;
+
+              map.addEventListener('mousemove', function(e){ 
+                  if(curDown){
+                  window.scrollBy(curXPos - e.pageX, curYPos - e.pageY);
+                  }
+              });
+
+              map.addEventListener('mousedown', function(e){ 
+                  curYPos = e.pageY; 
+                  curXPos = e.pageX; 
+                  curDown = true; 
+              });
+
+              map.addEventListener('mouseup', function(e){ 
+                  curDown = false; 
+              });
+              })()
+              var theThing = document.querySelector("#myModal");
+var container = document.querySelector("body");
+
+container.addEventListener("click", getClickPosition, false);
+
+function getClickPosition(e) {
+  var parentPosition = getPosition(container);
+  var xPosition = e.clientX - parentPosition.x - (theThing.clientWidth / 2);
+  var yPosition = e.clientY - parentPosition.y - (theThing.clientHeight / 2);
+   
+  theThing.style.left = xPosition + "px";
+  theThing.style.top = yPosition + "px";
+}
+
+// Helper function to get an element's exact position
+function getPosition(el) {
+var xPos = 0;
+var yPos = 0;
+
+while (el) {
+  if (el.tagName == "BODY") {
+    // deal with browser quirks with body/window/document and page scroll
+    var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+    var yScroll = el.scrollTop || document.documentElement.scrollTop;
+
+    xPos += (el.offsetLeft - xScroll + el.clientLeft);
+    yPos += (el.offsetTop - yScroll + el.clientTop);
+  } else {
+    // for all other non-BODY elements
+    xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+    yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+  }
+
+  el = el.offsetParent;
+}
+return {
+  x: xPos,
+  y: yPos
+};
+}
+</script>
+</body><script>
+  window[Symbol.for('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')] = new (class{constructor(e,t){this.name=e,this.destination=t,this.serverListeners={},this.bgRequestsListeners={},this.bgEventsListeners={},window.addEventListener("message",e=>{const t=e.data,n=!(t.destination&&t.destination===this.name),s=!t.event;if(!n&&!s)if("MARIO_POST_SERVER__BG_RESPONSE"===t.event){const e=t.args;if(this.hasBgRequestListener(e.requestId)){try{this.bgRequestsListeners[e.requestId](e.response)}catch(e){}delete this.bgRequestsListeners[e.requestId]}}else if("MARIO_POST_SERVER__BG_EVENT"===t.event){const e=t.args;if(this.hasBgEventListener(e.event))try{this.bgEventsListeners[t.id](e.payload)}catch(e){}}else if(this.hasServerListener(t.event))try{this.serverListeners[t.event](t.args)}catch(e){}})}emitToServer(e,t){const n=this.generateUIID(),s={args:t,destination:this.destination,event:e,id:n};return window.postMessage(s,location.origin),n}emitToBg(e,t){const n=this.generateUIID(),s={bgEventName:e,requestId:n,args:t};return this.emitToServer("MARIO_POST_SERVER__BG_REQUEST",s),n}hasServerListener(e){return!!this.serverListeners[e]}hasBgRequestListener(e){return!!this.bgRequestsListeners[e]}hasBgEventListener(e){return!!this.bgEventsListeners[e]}fromServerEvent(e,t){this.serverListeners[e]=t}fromBgEvent(e,t){this.bgEventsListeners[e]=t}fromBgResponse(e,t){this.bgRequestsListeners[e]=t}generateUIID(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){const t=16*Math.random()|0;return("x"===e?t:3&t|8).toString(16)}))}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}', 'MARIO_POST_SERVER_{fca67f41-776b-438a-9382-662171858615}')</script><script>
+  new (class{constructor(e){this.client=window[Symbol.for(e)],this.bindEvents()}bindEvents(){const e=this;var t;history.pushState=(t=history.pushState,function(){const n=t.apply(this,arguments);return e.onUrlChange(),n});let n=!0;history.replaceState=(t=>function(s){var r=t.apply(this,arguments);return n||e.onUrlChange(),n=!1,r})(history.replaceState),window.addEventListener("hashchange",(function(){e.onUrlChange()}))}onUrlChange(){this.client.emitToBg("TAB_STATE__INTERNAL_CONTENT_URL_REWRITED")}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')
+</script></html>

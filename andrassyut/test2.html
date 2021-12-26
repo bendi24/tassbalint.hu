@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #imagemap{
+            background-image: url(map.png);
+            width: 100%;
+            height: 600px;
+            position: relative;
+        }
+        #imagemap a{
+            display: block;
+            border: 2px solid red;
+            position: absolute;
+        }
+        a#test{ width: 80px; height: 10px; left: 90px; top: 163px}
+    </style>
+</head>
+<body>
+    <div id="imagemap"> 
+        <a href="#" id="test"></a>
+    </div>
+</body>
+<script>
+     
+     function zoom(event) {
+            event.preventDefault();
+
+            scale += event.deltaY * -0.01;
+
+            // Restrict scale
+            scale = Math.min(Math.max(.125, scale), 4);
+
+            // Apply scale transform
+            el.style.transform = `scale(${scale})`;
+            }
+            let scale = 1;
+            const el = document.querySelector('div');
+            el.onwheel = zoom;
+            document.getElementById('child').ondragstart = function() { return false; };
+</script>
+</html>
